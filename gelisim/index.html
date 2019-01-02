@@ -252,16 +252,10 @@
 
 
 						<div class="cd-schedule loading">
+							<!---->
 							<div class="timeline">
 								<ul>
-									<li><span>08:00</span></li>
-									<li><span>08:30</span></li>
-									<li><span>09:00</span></li>
-									<li><span>09:30</span></li>
-									<li><span>10:00</span></li>
-									<li><span>10:30</span></li>
-									<li><span>11:00</span></li>
-									<li><span>11:30</span></li>
+									
 									<li><span>12:00</span></li>
 									<li><span>12:30</span></li>
 									<li><span>13:00</span></li>
@@ -272,10 +266,7 @@
 									<li><span>15:30</span></li>
 									<li><span>16:00</span></li>
 									<li><span>16:30</span></li>
-									<li><span>17:00</span></li>
-									<li><span>17:30</span></li>
-									<li><span>18:00</span></li>
-									<li><span>18:30</span></li>
+									
 								</ul>
 							</div> <!-- .timeline -->
 
@@ -325,7 +316,7 @@
 											<li class="single-event" data-start="12:30" data-end="13:30" data-content="event-restorative-yoga"
 											 data-event="event-4">
 												<a target="_blank" href="#0" class="schedule-center-items">
-													<em class="event-name">Bilge Demirköz</em>
+													<em class="event-name">Bilimi sorgulamak(Bilge Demirköz)</em>
 												</a>
 											</li>
 
@@ -370,7 +361,7 @@
 
 											<li class="single-event" data-start="15:30" data-end="16:30" data-content="event-abs-circuit" data-event="event-4">
 												<a target="_blank" href="#0" class="schedule-center-items" class="schedule-center-items">
-													<em class="event-name">Zafer Elcik</em>
+													<em class="event-name">Tüketme Türet, Tükenme Üret(Uygar Özesmi)</em>
 												</a>
 											</li>
 
@@ -469,7 +460,7 @@
 								<a target="_blank" href="https://www.linkedin.com/in/bahtiyar-gen%C3%A7ero/?originalSubdomain=tr"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>Bahtiyer Gençero</h2>
+								<h2>Bahtiyar Gençero</h2>
 								<span>Kariyer.net Etkinlik Takım Lideri</span>
 							</div>
 						</div>
@@ -645,17 +636,17 @@
 				<div class="col-md-4 col-sm-6">
 					<div class="speaker" data-toggle="modal">
 						<div class="speaker-img">
-							<img src="./img/zaferegeli.png" alt="">
+							<img src="./img/uygarözesmiegeli.png" alt="">
 						</div>
 						<div class="speaker-body">
 							<div class="speaker-social">
-								<a target="_blank" href="https://twitter.com/zaferelcik"><i class="fa fa-twitter"></i></a>
-								<a target="_blank" href="https://www.instagram.com/zaferelcik/?hl=tr"><i class="fa fa-instagram"></i></a>
-								<a target="_blank" href="https://www.linkedin.com/in/zaferelcik/"><i class="fa fa fa-linkedin"></i></a>
+								<a target="_blank" href="https://twitter.com/uygarozesmi"><i class="fa fa-twitter"></i></a>
+								<a target="_blank" href="https://www.instagram.com/uygarozesmi/"><i class="fa fa-instagram"></i></a>
+								<a target="_blank" href="https://www.linkedin.com/in/uygarozesmi/?originalSubdomain=tr"><i class="fa fa fa-linkedin"></i></a>
 							</div>
 							<div class="speaker-content">
-								<h2>Zafer Elcik</h2>
-								<span>Co Founder, Otsimo</span>
+								<h2>Uygar Özesmi</h2>
+								<span>Good4Trust.org kurucusu</span>
 							</div>
 						</div>
 					</div>
@@ -739,11 +730,19 @@
 				<!-- /section title -->
 
 				<!-- sponsor -->
-				<div class="col-md-4 col-sm-8 col-xs-12">
+				<div class="col-md-3 col-sm-8 col-xs-12 ons-extend">
+					
+				</div>
+				
+				<div class="col-md-6 col-sm-8 col-xs-12 ons-self">
 					<a target="_blank" href="http://www.ons.com.tr/" class="sponsor">
 						<img src="./img/ONS_Logo.JPG" alt="">
 					</a>
 				</div>
+				<div class="col-md-3 col-sm-8 col-xs-12 ons-extend" >
+				
+				</div>
+				
 				<!-- /sponsor -->
 
 				<!-- sponsor -->
@@ -756,6 +755,11 @@
 				<div class="col-md-5 col-sm-8 col-xs-12">
 					<a target="_blank" href="https://www.webtekno.com/" class="sponsor">
 						<img src="./img/webtekno-logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-8 col-xs-12">
+					<a target="_blank" href="https://www.kariyer.net/" class="sponsor">
+						<img src="./img/Kariyernet.png" alt="">
 					</a>
 				</div>
 				<!-- sponsor -->
@@ -943,6 +947,19 @@
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/schedul2.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		window.onload = function(){
+			if(window.innerWidth>800){
+			let OnsLogo = document.getElementsByClassName("ons-self");
+			let OnsExtend = document.getElementsByClassName("ons-extend")
+
+			OnsExtend[0].style.height = OnsLogo[0].clientHeight + "px";
+			OnsExtend[1].style.height = OnsLogo[0].clientHeight + "px";
+			console.log(OnsExtend[0].clientHeight);
+			console.log(OnsLogo[0].clientHeight);
+		}
+		}
+	</script>
 </body>
 
 </html>
